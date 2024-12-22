@@ -51,7 +51,7 @@ const { reset } = useInfiniteScroll(
     emits('scroll')
   },
   {
-    distance: 10,
+    distance: 50,
     interval: 500,
     canLoadMore: () => loadMore.value
   }
@@ -62,7 +62,7 @@ const { reset } = useInfiniteScroll(
   <div class="min-w-full sm:min-w-[500px] md:min-w-[650px] max-w-full sm:max-w-[550px] md:max-w-[650px] h-full">
     <UCard
       class="h-full"
-      :ui="{ body: { base: 'h-full overflow-y-hidden' } }"
+      :ui="{ body: { base: 'h-full overflow-y-hidden pb-[90px] md:pb-[100px]' } }"
     >
       <template #header>
         <slot name="cyHeader">
