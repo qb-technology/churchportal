@@ -51,8 +51,8 @@ const { reset } = useInfiniteScroll(
     emits('scroll')
   },
   {
-    distance: 50,
-    interval: 500,
+    distance: 190,
+    // interval: 500,
     canLoadMore: () => loadMore.value
   }
 )
